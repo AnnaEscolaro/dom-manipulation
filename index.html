@@ -73,10 +73,13 @@
     changeTitle('Desafio - JavaScript');
 
     const changeCase = () => {
-      const firstParagraph = document.getElementsByTagName('p')[0];
-      firstParagraph.style.textTransform = 'uppercase';
+      firstParagraph = document.getElementsByTagName('p')[0].style.textTransform = 'uppercase';
     }
     changeCase();
+
+    const exhibitP = () => {
+      const paragraphs = document.querySelectorAll('p');
+    }
   </script>
 </body>
 
