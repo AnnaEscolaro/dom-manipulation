@@ -53,6 +53,12 @@
       paragraph2.innerText = text;
     };
     changeContent('Seja um dev de sucesso');
+
+    const changeColor = (color) => {
+      const pickColor = document.getElementsByClassName('main-content')[0];
+      pickColor.style.backgroundColor = color;
+    }
+    changeColor('rgb(76, 164, 109)');
   </script>
 </body>
 
