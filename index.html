@@ -65,6 +65,12 @@
       mainContentColor.style.backgroundColor = color;
     }
     changeBackColor('white');
+
+    const changeTitle = (title) => {
+      const header1 = document.getElementsByClassName('title')[0];
+      header1.innerText = title;
+    }
+    changeTitle('Desafio - JavaScript');
   </script>
 </body>
 
