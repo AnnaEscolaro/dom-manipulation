@@ -71,6 +71,12 @@
       header1.innerText = title;
     }
     changeTitle('Desafio - JavaScript');
+
+    const changeCase = () => {
+      const firstParagraph = document.getElementsByTagName('p')[0];
+      firstParagraph.style.textTransform = 'uppercase';
+    }
+    changeCase();
   </script>
 </body>
 
