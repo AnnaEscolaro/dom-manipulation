@@ -78,11 +78,15 @@
     }
     changeCase();
 
-    // const exhibitP = () => {
-    //   const paragraphs = document.querySelectorAll('p');
-    //   console.log(paragraphs);
-    // }
-    // exhibitP();
+    const exhibitP = () => {
+      let paragraphs = document.getElementsByTagName('p');
+      let footer = [];
+      for (let idx = 0; idx < paragraphs.length - 1; idx += 1) {
+        footer.push(paragraphs[idx].innerText);
+      }
+      paragraphs[3].innerText = footer.join(' ');
+    }
+    exhibitP();
 
   </script>
 </body>
